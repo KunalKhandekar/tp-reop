@@ -201,7 +201,7 @@ function PricingCard({
         <ContactForm
           isOpen={isModalOpen}
           onOpenChange={setIsModalOpen}
-          defaultProduct={value as string}
+          defaultProduct={value as "small" | "medium" | "large" | "enterprise"}
           defaultDuration={isYearly ? 'yearly' : 'monthly'}
           trigger={
             <Button

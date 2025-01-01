@@ -6,6 +6,7 @@ interface ThreadStepProps {
   description: string
   icon: ReactNode
   isLast?: boolean
+  children?: ReactNode;
 }
 
 export function ThreadStep({ number, title, description, icon, isLast = false }: ThreadStepProps) {
